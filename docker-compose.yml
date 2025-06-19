@@ -1,0 +1,19 @@
+
+services:
+  dev-db:
+    image: postgres:17.5-alpine3.22
+    restart: always
+    ports:
+      - "5433:5432"
+    env_file:
+      - ./.env
+    volumes:
+      - ./scripts:/docker-entrypoint-initdb.d
+    
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+     
+name : newsquawk-api

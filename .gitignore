@@ -1,0 +1,84 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# FastAPI specific (e.g., auto-generated files)
+instance/
+*.db
+*.sqlite3
+
+# VS Code settings
+.vscode/
+
+# Pytest / testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# MyPy, Pylint, etc.
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# Logs and debug
+*.log
+*.pot
+*.mo
+
+# IDE specific
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment variables
+.env
+.env.*
+
+# Docker
+*.pid
+*.tar
+*.bak
+docker-compose.override.yml
+
+# Build / distribution
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
