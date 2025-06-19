@@ -2,11 +2,12 @@
 import os
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import sessionmaker, declarative_base
-from dotenv import load
+from dotenv import load_dotenv
 
-load()
+load_dotenv()
 
 DATABASE_URL = os.getenv("DATABASE_URL")
+print("Connecting to DB at:", os.getenv("DATABASE_URL"))
 if not DATABASE_URL:
     raise ValueError("DATABASE_URL is not set in the .env file")
 

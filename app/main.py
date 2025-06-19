@@ -14,10 +14,7 @@ from typing import List
 
 SCRAPE_INTERVAL = 30  
 truth_stream_subscribers: list[asyncio.Queue] = []
-origins = [
-    "http://localhost:5173",
-    "https://yourfrontenddomain.com", 
-]
+origins = ["*"] 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     task = asyncio.create_task(periodic_scraper())
